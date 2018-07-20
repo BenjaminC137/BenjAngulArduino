@@ -6,6 +6,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { ProjectDetailsComponent } from './project-details/project-details.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { QaComponent } from './qa/qa.component';
+import { ProjectComponent } from './project/project.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { QaComponent } from './qa/qa.component';
     ProjectsComponent,
     ProjectDetailsComponent,
     NavBarComponent,
-    QaComponent
+    QaComponent,
+    ProjectComponent
   ],
   imports: [
     BrowserModule

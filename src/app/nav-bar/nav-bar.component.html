@@ -1,3 +1,23 @@
-<p>
-  nav-bar works!
-</p>
+<nav class="fixed-top navbar navbar-expand-lg navColors">
+		<a class="navbar-brand" routerLink="/home" routerLinkActive="active">
+			<img src="assets/arduino-UNO.png"width="35px" class="d-inline-block align-top" alt="ball" title="ball"> Benjamin's Arduino Projects</a>
+
+	 <a class="nav-btn btn-success  cartButton ml-auto"routerLink="/cart" routerLinkActive="active">Cart: <a href="/cart" class="badge badge-success">{{cart.totalquantity}}</a></a>
+
+		<button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		 </button>
+
+		<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      	<li class="nav-item active">
+        <a class="nav-link" routerLink="/home" routerLinkActive="active">Home <span class="sr-only">(current)</span></a>
+		</li>
+		<li class="nav-item">
+        <a class=" nav-item " routerLink="/cart" routerLinkActive="active">cart</a>
+      	</li>
+		<li class="nav-item">
+        <a class="nav-link" href= "nav-bar.component.html">links</a>
+      	</li>
+    </ul>
+  </div>
